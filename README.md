@@ -2,25 +2,32 @@
 
 **FFXIVのフィールドマーカーを、床を見ながら整理・編集・保存するWindows用アプリ。**
 
-9.1（配布版 **0.0.9.1**） / Windows x64 / Dalamud不要
+**0.1.0.3（更新103回）** / Windows x64 / Dalamud不要
 
-[アプリをダウンロード](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/releases/download/v0.0.9.1/UltimateXIVMarkerManager_0.0.9.1.zip) · [リリース内容](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/releases/tag/v0.0.9.1) · [画像付き操作ガイド](docs/USER_GUIDE.md) · [PDF説明書](docs/UltimateXIVMarkerManager_Manual_0.0.9.1.pdf)
+[English](README_EN.md) · [英語操作ガイド](docs/USER_GUIDE_EN.md) · [アプリをダウンロード](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/releases/download/v0.1.0.3/UltimateXIVMarkerManager_0.1.0.3.zip) · [リリース内容](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/releases/tag/v0.1.0.3) · [画像付き操作ガイド](docs/USER_GUIDE.md) · [旧版0.0.9.1のPDF説明書](docs/UltimateXIVMarkerManager_Manual_0.0.9.1.pdf)
 
 ![マーカープリセットとリアル戦闘MAPの説明用画面](docs/images/02-overview.png)
 
 画面は9.1のUIに架空の配置とパスを表示した説明用サンプルです。床画像と図面の記号も説明用に作成しています。
 
+## 最新版の変更
+
+- 英語版の説明と画像付き操作ガイドを追加し、アプリZIPにもREADME_EN.txtを同梱しました。設定からEnglishへ切り替えできます。
+- 最近のUISAVEの履歴削除、EXE／UISAVEの既定場所探索、フィールド1・2…の切替、床表示の修正を含みます。
+- 煉獄1層の初期金属床と岩床を分離し、選択ボタンと説明・読込文字の重なりを修正しています。
+- 0.1.0.3は説明書追加の更新で、アプリ動作は0.1.0.2を保持しています。版は更新回数の十進各桁（0.0.9.9の次は0.1.0.0）です。
+
 ## 使い始める
 
 1. リリースのアプリZIPをダウンロードし、フォルダごと展開します。
 2. `UltimateXIVMarkerManager.exe`を起動します。必要な場合は[.NET 10 Desktop Runtime x64](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)と[WebView2 Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/)を導入します。
-3. 「EXEを選択」でゲームの`game`フォルダにある`ffxiv_dx11.exe`を選びます。隣の`sqpack`からMAP名・画像・図面素材を取得し、保存構造を照合するために必須です。
-4. 「UISAVEを選択」で対象キャラクターの`UISAVE.DAT`を開きます。場所の探し方は[操作ガイド](docs/USER_GUIDE.md#section-04)にあります。
+3. 有効な保存済みEXEを優先し、未設定なら標準のインストール場所を確認します。見つからない場合は「EXEを選択」でゲームの`game`フォルダにある`ffxiv_dx11.exe`を選びます。隣の`sqpack`からMAP名・画像・図面素材を取得し、保存構造を照合するために必須です。
+4. 標準のドキュメント場所に一意のUISAVEがあれば自動選択します。複数キャラクターがある場合や見つからない場合は「UISAVEを選択」で対象キャラクターの`UISAVE.DAT`を開きます。場所の探し方は[操作ガイド](docs/USER_GUIDE.md#section-04)にあります。
 5. マーカーを編集して「作業中Presetへ反映」。FFXIVを終了して「保存」を押し、保存枠と差分を確認します。
 
 Library・独立マップへの保存と、ゲームのUISAVEへの保存は別の操作です。ゲームへの書き込み前にはバックアップと状態の確認を行います。
 
-## 9.1でできること
+## 主な機能
 
 | 機能 | 対応範囲 |
 | --- | --- |
@@ -37,13 +44,14 @@ Library・独立マップへの保存と、ゲームのUISAVEへの保存は別�
 
 全コンテンツの床選択・欠け・模様の一致は引き続き確認が必要です。ゲームの照明・発光・動くギミックや、リアルタイムのフェーズ判定は再現しません。
 
-マーカー変更→保存→ゲーム反映は9.1で利用者から成功報告があります。MAPキャッシュ・画像再読込・Strategy外部保存/取込等はバックエンドと画面の背景検証を実施しています。全機能・全コンテンツのゲーム実機確認とは区別しています。
+今回の署名Build・ZIP検証と、ゲーム実機での動作は別の確認です。マーカー変更→保存→ゲーム反映は0.0.9.1で利用者から成功報告があります。MAPキャッシュ・画像再読込・Strategy外部保存/取込等はバックエンドと画面の背景検証を実施しています。全機能・全コンテンツのゲーム実機確認とは区別しています。
 
 ## 説明書と外部ファイル
 
+- [English illustrated guide](docs/USER_GUIDE_EN.md)：英語で起動・編集・保存・MAP・Strategyを説明。
 - [画像付き操作ガイド](docs/USER_GUIDE.md)：起動準備、UISAVEの探し方、編集・保存、復元、MAP、Library、Strategyを説明。
-- [PDF説明書](docs/UltimateXIVMarkerManager_Manual_0.0.9.1.pdf)：ダウンロードして読みやすい版。
-- [説明書一式ZIP](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/releases/download/v0.0.9.1/UltimateXIVMarkerManager_Manual_0.0.9.1.zip)：HTML・Markdown・PDF・画像をまとめたオフライン版。展開後に`USER_GUIDE.html`を開きます。
+- [旧版0.0.9.1のPDF説明書](docs/UltimateXIVMarkerManager_Manual_0.0.9.1.pdf)：ダウンロードして読みやすい版。
+- [旧版0.0.9.1の説明書一式ZIP](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/releases/download/v0.0.9.1/UltimateXIVMarkerManager_Manual_0.0.9.1.zip)：HTML・Markdown・PDF・画像をまとめたオフライン版。展開後に`USER_GUIDE.html`を開きます。
 
 | 拡張子 | 用途 |
 | --- | --- |
@@ -57,6 +65,6 @@ Library・独立マップへの保存と、ゲームのUISAVEへの保存は別�
 
 アプリ本体はリリースに添付しています。このリポジトリに置いているのは説明資料と配布情報です。**アプリの開発ソースは非公開です。** GitHubの「Source code (zip / tar.gz)」に含まれるのは、この配布リポジトリの説明資料です。
 
-アプリZIPは署名済みの配布構成です。EXEだけを取り出さず、同梱ファイルをそのまま展開して使ってください。説明書は別添付で提供します。
+アプリZIPは署名済みの配布構成です。EXEだけを取り出さず、同梱ファイルをそのまま展開して使ってください。日本語README.txtと英語README_EN.txtを同梱しています。
 
 不具合を伝える際はアプリ版・コンテンツ名・初期/設置場所/高さ・操作・エラー文を確認してください。画面のEXE / UISAVEパス、キャラクター情報、最近のファイル一覧を隠し、UISAVEや使用中の個人設定フォルダを一般公開しないでください。
