@@ -2,9 +2,9 @@
 
 **A Windows app for organizing, editing and saving FFXIV field markers while viewing the arena floor.**
 
-**0.1.0.3** (update 103) · Windows x64 · No Dalamud required
+**0.1.0.4** (update 104) · Windows x64 · No Dalamud required
 
-[日本語](README.md) · [Download the app](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/releases/download/v0.1.0.3/UltimateXIVMarkerManager_0.1.0.3.zip) · [Release notes](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/releases/tag/v0.1.0.3) · [Illustrated English guide](docs/USER_GUIDE_EN.md)
+[日本語](README.md) · [Download the app](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/releases/download/v0.1.0.4/UltimateXIVMarkerManager_0.1.0.4.zip) · [Release notes](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/releases/tag/v0.1.0.4) · [Illustrated English guide](docs/USER_GUIDE_EN.md)
 
 ![Marker presets and arena preview — Japanese UI sample with fictional data](docs/images/02-overview.png)
 
@@ -28,7 +28,7 @@ Saving to Library or an independent map is separate from writing marker slots to
 - Arena-floor fixes, field selection and separated help/loading text. Multiple backgrounds use **Field 1, Field 2, …**; these are not live phase detection.
 - Abyssos Fifth Circle (Savage): initial metal floor and rock floor are separate fields. Other recent arena fixes are retained from 0.1.0.2.
 
-0.1.0.3 adds documentation to the distribution; application behavior is unchanged from 0.1.0.2. Version components are decimal digits of the update count: 0.0.9.9 is followed by 0.1.0.0.
+0.1.0.4 fixes the bottom of the map being clipped below the field controls. The square map now fits the available space above the action buttons, preserving marker coordinates, zoom and pan. Version components are decimal digits of the update count: 0.0.9.9 is followed by 0.1.0.0.
 
 ## Features and scope
 

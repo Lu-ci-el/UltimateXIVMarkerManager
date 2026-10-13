@@ -1,4 +1,4 @@
-# UltimateXIVMarkerManager 0.1.0.3 — English User Guide
+# UltimateXIVMarkerManager 0.1.0.4 — English User Guide
 
 Organize, edit and save FFXIV field marker presets on Windows while viewing
 the arena floor. Dalamud is not required. The default interface is Japanese;
@@ -203,10 +203,15 @@ screenshots. Do not post UISAVE files, backups or your entire personal app folde
 
 ## 9. This Release
 
-0.1.0.3 adds this English guide to the signed application and updates the bundled
-Japanese instructions. Application behavior is retained from 0.1.0.2, including
-recent-history removal, default paths, field selection and arena-floor fixes.
-The version represents update count 103, with decimal carry in each component.
+0.1.0.4 fixes map clipping below the field selection controls. The square map
+fits the remaining space above the action buttons as the window changes size.
+Marker coordinates, zoom and pan stay unchanged. Japanese and English guides,
+recent-history removal, default paths and existing arena-floor fixes are retained.
+
+Headless layout checks passed for Japanese and English at the minimum window
+size and larger sizes. The signed build and package were verified; this update
+was not run in WPF or the game.
+The version represents update count 104, with decimal carry in each component.
 
 This repository distributes the application and user documentation. The
 application's development source is private. GitHub's automatically generated
