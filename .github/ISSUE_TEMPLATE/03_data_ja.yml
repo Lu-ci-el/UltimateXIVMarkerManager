@@ -1,0 +1,35 @@
+name: "ログ・再現データの提供（日本語）"
+description: "既存の不具合に関する追加資料や、未確認のリアル戦闘MAPの確認資料を提供します。"
+title: "[資料提供] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        関連するIssueがある場合は、そちらのコメントに添付すると資料をまとめられます。一般的な配置・資料の共有は[Discussions](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/discussions/categories/general)も利用できます。
+        投稿は公開されます。名前・個人パスを隠し、UISAVE.DAT全体や個人設定フォルダ、ゲーム本体・SqPackは添付しないでください。
+        **調査・修正の可否は支援金の状況と開発に充てられる時間によります。資料提供や支援は修正・期限の保証ではなく、支援なしでも投稿できます。**
+        [添付の案内](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/blob/main/.github/SUPPORT.md#日本語) · [Ko-fi](https://ko-fi.com/lost2) · [OFUSE](https://ofuse.me/lost)
+  - type: input
+    id: related
+    attributes:
+      label: "関連するIssue（あれば）"
+      placeholder: "#123 またはURL"
+  - type: input
+    id: context
+    attributes:
+      label: "UXMMの版・対象コンテンツ"
+      description: "分かる範囲で、アプリ版、ゲームのパッチ、コンテンツ名と難易度を記入してください。"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "資料の内容・確認してほしいこと"
+      description: "撮影・取得した操作、初期／設置場所、フィールド番号、高さY、倍率、Marker座標など、資料を再現できる条件を添えてください。"
+    validations:
+      required: true
+  - type: textarea
+    id: attachments
+    attributes:
+      label: "画像・ログ・データの添付"
+      description: "画像、関連ログの抜粋、Marker座標、必要な項目だけのMap PACKなど。独自拡張子のファイルはZIPにまとめ、この欄へドラッグ＆ドロップするか添付ボタンで追加してください。"

@@ -1,0 +1,35 @@
+name: "Logs / reproduction data (English)"
+description: "Contribute evidence for an existing bug or an arena MAP that needs checking."
+title: "[Data] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If a related issue exists, attach your files in its comments to keep evidence together. Use [Discussions](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/discussions/categories/general) for general community sharing.
+        Posts are public. Hide names and personal paths; do not upload a full UISAVE.DAT, personal settings folder, game executable or SqPack files.
+        **Investigation and fixes depend on financial support and available development time. Data and donations do not guarantee a fix or deadline. Contributing without a donation is welcome.**
+        [Attachment guide](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/blob/main/.github/SUPPORT.md#english) · [Ko-fi](https://ko-fi.com/lost2) · [OFUSE](https://ofuse.me/lost)
+  - type: input
+    id: related
+    attributes:
+      label: "Related issue (if any)"
+      placeholder: "#123 or a URL"
+  - type: input
+    id: context
+    attributes:
+      label: "UXMM version and duty"
+      description: "Include the app version, game patch, duty name and difficulty where known."
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "What the files show and what needs checking"
+      description: "Describe how you captured the evidence: initial/placement location, field number, height Y, zoom, relevant marker coordinates and steps."
+    validations:
+      required: true
+  - type: textarea
+    id: attachments
+    attributes:
+      label: "Screenshots, logs and data files"
+      description: "Attach screenshots, relevant log excerpts, marker coordinates or a Map PACK containing only the necessary items. Put custom file formats in a ZIP, then drag it here or use the attachment button."

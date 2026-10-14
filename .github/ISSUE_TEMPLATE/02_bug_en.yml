@@ -1,0 +1,61 @@
+name: "Bug / arena MAP report (English)"
+description: "Report clipped floors, incorrect fields or heights, broken textures, or other bugs. Attach screenshots and ZIP files."
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If the arena MAP looks wrong, please share the duty, screenshots and reproduction details. You can report a problem even if some details are unknown.
+        Attach images, text or ZIP files in the evidence field. Posts are public. Hide names and personal paths; do not upload a full UISAVE.DAT, personal settings folder, game executable or SqPack files.
+        **Investigation and fixes depend on financial support and available development time. Reports, contributed data and donations do not guarantee a fix or a response deadline. A donation is not required to report a problem.**
+        [Reporting and attachment guide](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/blob/main/.github/SUPPORT.md#english) · [Ko-fi](https://ko-fi.com/lost2) · [OFUSE](https://ofuse.me/lost)
+  - type: input
+    id: app_version
+    attributes:
+      label: "UXMM version"
+      description: "The version shown in the app. Enter 'Unknown' if you cannot check."
+      placeholder: "For example, 0.1.0.7"
+    validations:
+      required: true
+  - type: input
+    id: game_version
+    attributes:
+      label: "FFXIV patch and environment (if known)"
+      placeholder: "Game patch, Windows version and UI language"
+  - type: input
+    id: duty
+    attributes:
+      label: "Duty and difficulty"
+      description: "For MAP reports, include the duty name, floor and Normal/Savage/Ultimate difficulty. Include an ID only if known."
+      placeholder: "For example, AAC Cruiserweight M3 (Savage), or N/A for an unrelated issue"
+  - type: textarea
+    id: view
+    attributes:
+      label: "MAP selection and marker coordinates"
+      description: "Include initial/placement location, field number, selected floor height Y and zoom. Add relevant marker X/Y/Z coordinates if available."
+      placeholder: |
+        View: Arena MAP, placement location
+        Field:
+        Floor height Y:
+        Zoom:
+        Marker X/Y/Z (optional):
+  - type: textarea
+    id: behavior
+    attributes:
+      label: "Actual and expected behavior"
+      description: "For example, a clipped perimeter, wrong floor or darkened image. Include the last working UXMM version if known."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to reproduce"
+      placeholder: |
+        1. Select the affected preset.
+        2. Open the arena MAP.
+        3. …
+  - type: textarea
+    id: evidence
+    attributes:
+      label: "Screenshots, errors, logs and reproduction files"
+      description: "Drag images or ZIP files here, or use the attachment button. Paste the full error message or relevant log excerpt. If you have a reference image of the correct floor, identify the scene. Put custom file formats in a ZIP."

@@ -1,0 +1,38 @@
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 交流・資料共有 / Community and resource sharing
+        質問、使い方、配置や参考資料の共有にご利用ください。日本語・英語どちらでも投稿できます。
+        Ask questions, discuss usage, and share layouts or reference material in Japanese or English.
+
+        リアル戦闘MAPの不具合は[Issues](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/issues/new/choose)へ。/ Please report arena MAP bugs in [Issues](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/issues/new/choose).
+        投稿と添付は公開されます。名前・個人パスを隠し、UISAVE.DAT全体・個人設定・ゲーム本体・SqPackは添付しないでください。
+        Posts and attachments are public. Hide names and personal paths; do not upload full UISAVE.DAT files, personal settings, game executables or SqPack files.
+
+        **調査・修正は支援金の状況と開発時間によります。投稿・資料提供・支援は修正や期限を保証しません。支援なしでも利用できます。**
+        **Investigation and fixes depend on financial support and development time. Posts, files and donations do not guarantee a fix or deadline. Participation does not require a donation.**
+        [案内 / Guide](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/blob/main/.github/SUPPORT.md) · [Ko-fi](https://ko-fi.com/lost2) · [OFUSE](https://ofuse.me/lost)
+  - type: dropdown
+    id: topic
+    attributes:
+      label: "話題 / Topic"
+      options:
+        - "交流 / Community"
+        - "質問 / Question"
+        - "配置・資料の共有 / Layouts and resources"
+        - "提案 / Idea"
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: "内容 / Details"
+      description: "共有資料にはコンテンツ名・難易度、アプリ版、必要な場面や高さを添えてください。 / For shared material, include the duty, difficulty, app version, and relevant field or height."
+    validations:
+      required: true
+  - type: textarea
+    id: attachments
+    attributes:
+      label: "添付・参考リンク / Attachments and links"
+      description: "画像・ZIPをここへドラッグ＆ドロップ、または添付ボタンで追加できます。独自形式はZIPにまとめてください。 / Drag images or ZIP files here, or use the attachment button. Put custom formats in a ZIP."
