@@ -1,4 +1,4 @@
-# UltimateXIVMarkerManager 0.1.0.6 — English User Guide
+# UltimateXIVMarkerManager 0.1.0.7 — English User Guide
 
 Organize, edit and save FFXIV field marker presets on Windows while viewing
 the arena floor. Dalamud is not required. The default interface is Japanese;
@@ -203,16 +203,14 @@ screenshots. Do not post UISAVE files, backups or your entire personal app folde
 
 ## 9. This Release
 
-0.1.0.6 uses native horizontal floor surfaces supporting the marker area to
-improve framing at 100% zoom. Matching platform assemblies and aspect ratio
-are retained. Ambiguous scenes keep their previous framing; detection is
-not guaranteed for every arena. Marker coordinates stay unchanged.
-
-31 native floor, height and field views passed regression checks: 15 improved
-frames and 16 identical fallback images. Three headless UI cases passed 234
-checks including 100% framing and marker pixel alignment. The signed build
-and packages were verified. WPF and the game were not run.
-The version represents update count 106, with decimal carry in each component.
+0.1.0.7 fixes floor perimeters clipped by the 0.1.0.6 framing change.
+The whole visible connected floor is included, with a small edge margin.
+14 fitted views passed explicit image-edge checks; 17 fallback views match
+0.1.0.5, including the restored P5S metal floor. 31 production HTML views
+passed 100% and 80% zoom and marker-alignment checks. The previous TOP
+clipping is rejected by both pixel-edge and independently measured bounds.
+This covers the measured scenes, not every arena in the game. WPF/game UI
+was not run. The version represents update count 107. No game assets are distributed.
 
 This repository distributes the application and user documentation. The
 application's development source is private. GitHub's automatically generated
