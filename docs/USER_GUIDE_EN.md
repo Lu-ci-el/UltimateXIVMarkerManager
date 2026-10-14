@@ -1,4 +1,4 @@
-# UltimateXIVMarkerManager 0.1.0.4 — English User Guide
+# UltimateXIVMarkerManager 0.1.0.5 — English User Guide
 
 Organize, edit and save FFXIV field marker presets on Windows while viewing
 the arena floor. Dalamud is not required. The default interface is Japanese;
@@ -203,15 +203,15 @@ screenshots. Do not post UISAVE files, backups or your entire personal app folde
 
 ## 9. This Release
 
-0.1.0.4 fixes map clipping below the field selection controls. The square map
-fits the remaining space above the action buttons as the window changes size.
-Marker coordinates, zoom and pan stay unchanged. Japanese and English guides,
-recent-history removal, default paths and existing arena-floor fixes are retained.
+0.1.0.5 restores the visible edges of the lower floor in Cruiserweight M3.
+Marker coordinates are unchanged. Other floor rendering and the previous map
+layout fix are retained. Older renderer caches regenerate when needed.
 
-Headless layout checks passed for Japanese and English at the minimum window
-size and larger sizes. The signed build and package were verified; this update
-was not run in WPF or the game.
-The version represents update count 104, with decimal carry in each component.
+31 native floor, height and field combinations passed image regression checks;
+30 unaffected images are identical to the previous version. Passing checks
+bound to the current application and sources are required for release ZIPs.
+The signed build and packages were verified. WPF and the game were not run.
+The version represents update count 105, with decimal carry in each component.
 
 This repository distributes the application and user documentation. The
 application's development source is private. GitHub's automatically generated
