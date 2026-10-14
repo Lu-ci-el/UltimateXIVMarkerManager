@@ -2,9 +2,9 @@
 
 **A Windows app for organizing, editing and saving FFXIV field markers while viewing the arena floor.**
 
-**0.1.0.5** (update 105) · Windows x64 · No Dalamud required
+**0.1.0.6** (update 106) · Windows x64 · No Dalamud required
 
-[日本語](README.md) · [Download the app](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/releases/download/v0.1.0.5/UltimateXIVMarkerManager_0.1.0.5.zip) · [Release notes](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/releases/tag/v0.1.0.5) · [Illustrated English guide](docs/USER_GUIDE_EN.md)
+[日本語](README.md) · [Download the app](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/releases/download/v0.1.0.6/UltimateXIVMarkerManager_0.1.0.6.zip) · [Release notes](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/releases/tag/v0.1.0.6) · [Illustrated English guide](docs/USER_GUIDE_EN.md)
 
 ![Marker presets and arena preview — Japanese UI sample with fictional data](docs/images/02-overview.png)
 
@@ -28,7 +28,7 @@ Saving to Library or an independent map is separate from writing marker slots to
 - Arena-floor fixes, field selection and separated help/loading text. Multiple backgrounds use **Field 1, Field 2, …**; these are not live phase detection.
 - Abyssos Fifth Circle (Savage): initial metal floor and rock floor are separate fields. Other recent arena fixes are retained from 0.1.0.2.
 
-0.1.0.5 restores the visible edges of the lower floor in Cruiserweight M3. Image regression checks cover 31 floor, height and field combinations; the other 30 images remain unchanged. Passing checks are now required before distributing a release ZIP. Marker coordinates are preserved. Version components are decimal digits of the update count: 0.0.9.9 is followed by 0.1.0.0.
+0.1.0.6 uses shared native floor geometry to improve framing at 100% zoom. 15 of 31 checked floor, height and field views now fit their supported floor;16 ambiguous views keep their previous images. Markers preserve their coordinates and use the same projection as the floor. Automatic detection is not guaranteed for every arena. Version components are decimal digits of the update count: 0.0.9.9 is followed by 0.1.0.0.
 
 ## Features and scope
 

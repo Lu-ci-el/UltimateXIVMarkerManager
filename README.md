@@ -2,9 +2,9 @@
 
 **FFXIVのフィールドマーカーを、床を見ながら整理・編集・保存するWindows用アプリ。**
 
-**0.1.0.5（更新105回）** / Windows x64 / Dalamud不要
+**0.1.0.6（更新106回）** / Windows x64 / Dalamud不要
 
-[English](README_EN.md) · [英語操作ガイド](docs/USER_GUIDE_EN.md) · [アプリをダウンロード](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/releases/download/v0.1.0.5/UltimateXIVMarkerManager_0.1.0.5.zip) · [リリース内容](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/releases/tag/v0.1.0.5) · [画像付き操作ガイド](docs/USER_GUIDE.md) · [旧版0.0.9.1のPDF説明書](docs/UltimateXIVMarkerManager_Manual_0.0.9.1.pdf)
+[English](README_EN.md) · [英語操作ガイド](docs/USER_GUIDE_EN.md) · [アプリをダウンロード](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/releases/download/v0.1.0.6/UltimateXIVMarkerManager_0.1.0.6.zip) · [リリース内容](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/releases/tag/v0.1.0.6) · [画像付き操作ガイド](docs/USER_GUIDE.md) · [旧版0.0.9.1のPDF説明書](docs/UltimateXIVMarkerManager_Manual_0.0.9.1.pdf)
 
 ![マーカープリセットとリアル戦闘MAPの説明用画面](docs/images/02-overview.png)
 
@@ -15,7 +15,7 @@
 - 英語版の説明と画像付き操作ガイドを追加し、アプリZIPにもREADME_EN.txtを同梱しました。設定からEnglishへ切り替えできます。
 - 最近のUISAVEの履歴削除、EXE／UISAVEの既定場所探索、フィールド1・2…の切替、床表示の修正を含みます。
 - 煉獄1層の初期金属床と岩床を分離し、選択ボタンと説明・読込文字の重なりを修正しています。
-- 0.1.0.5は、クルーザー3層の下の床が黒く薄れる不具合を修正しました。31通りの床・高さ・場面を画像比較し、今回の床以外の30通りが従来と一致することを確認。配布前の回帰検査を必須にしました。座標は保持します。版は更新回数の十進各桁（0.0.9.9の次は0.1.0.0）です。
+- 0.1.0.6は、共通の床面判定で100%のMAP表示範囲を改善しました。31通り中15通りは床へfitし、判別が難しい16通りは従来画像を保持。Marker座標を保ったまま、画像と同じ範囲で表示します。全MAPの完全自動判別を保証するものではありません。版は更新回数の十進各桁（0.0.9.9の次は0.1.0.0）です。
 
 ## 使い始める
 
