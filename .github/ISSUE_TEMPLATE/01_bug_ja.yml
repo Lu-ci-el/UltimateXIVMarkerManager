@@ -1,0 +1,61 @@
+name: "不具合・リアル戦闘MAP報告（日本語）"
+description: "床の欠け、別の床・高さ、模様の崩れ、その他の不具合を報告します。画像やZIPを添付できます。"
+title: "[不具合] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        リアル戦闘MAPがおかしい場合は、コンテンツ名と画面・再現条件をお寄せください。すべての項目が分からなくても報告できます。
+        添付欄には画像・テキスト・ZIPなどを追加できます。投稿は公開されます。名前・個人パスを隠し、UISAVE.DAT全体や個人設定フォルダ、ゲーム本体・SqPackは添付しないでください。
+        **調査・修正の可否は支援金の状況と開発に充てられる時間によります。報告・資料提供・支援は、修正や対応期限を保証するものではありません。報告に支援は必須ではありません。**
+        [報告・添付の案内](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/blob/main/.github/SUPPORT.md#日本語) · [Ko-fi](https://ko-fi.com/lost2) · [OFUSE](https://ofuse.me/lost)
+  - type: input
+    id: app_version
+    attributes:
+      label: "UXMMのバージョン"
+      description: "アプリに表示されている版。不明なら「不明」と記入してください。"
+      placeholder: "例：0.1.0.7"
+    validations:
+      required: true
+  - type: input
+    id: game_version
+    attributes:
+      label: "FFXIVのパッチ・環境（分かる範囲）"
+      placeholder: "ゲームのパッチ、Windowsの版、UI言語など"
+  - type: input
+    id: duty
+    attributes:
+      label: "コンテンツ名・難易度"
+      description: "MAPの報告では正式名または通称、階層、ノーマル／零式／絶など。IDは分かる場合だけ。"
+      placeholder: "例：クルーザー級3層（零式）／コンテンツと無関係なら「該当なし」"
+  - type: textarea
+    id: view
+    attributes:
+      label: "MAPの選択状態・Marker座標"
+      description: "初期／設置場所、フィールド番号、選択した床の高さY、倍率を記入。再現に必要なMarkerのX/Y/Zも分かれば追加してください。"
+      placeholder: |
+        表示：リアル戦闘MAP、設置場所
+        フィールド：
+        床の高さY：
+        倍率：
+        MarkerのX/Y/Z（任意）：
+  - type: textarea
+    id: behavior
+    attributes:
+      label: "起きたこと・本来どう表示されるか"
+      description: "床の外周が切れる、別の床になる、暗くなる等。正常だったUXMMの版が分かれば記入してください。"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "再現手順"
+      placeholder: |
+        1. 対象のプリセットを選択
+        2. リアル戦闘MAPを表示
+        3. …
+  - type: textarea
+    id: evidence
+    attributes:
+      label: "画像・エラー・ログ・再現資料の添付"
+      description: "この欄に画像やZIPをドラッグ＆ドロップ、または添付ボタンで追加。エラー全文や関連ログも貼れます。正しい床の参考画像があれば、撮影した場面も添えてください。独自形式はZIPにまとめてください。"

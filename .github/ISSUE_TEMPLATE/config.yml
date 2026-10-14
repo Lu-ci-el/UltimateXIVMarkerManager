@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: "交流・資料共有 / Community and resource sharing"
+    url: https://github.com/Lu-ci-el/UltimateXIVMarkerManager/discussions/categories/general
+    about: "Discussionsで質問・交流・配置や資料の共有。添付もできます。 / Ask questions, chat and share files."
+  - name: "報告・添付・支援の案内 / Reporting, attachments and support"
+    url: https://github.com/Lu-ci-el/UltimateXIVMarkerManager/blob/main/.github/SUPPORT.md
+    about: "報告に必要な情報と支援条件を日英で案内。 / What to include and how development support works."

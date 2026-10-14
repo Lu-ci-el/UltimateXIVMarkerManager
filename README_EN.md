@@ -10,6 +10,18 @@
 
 The illustration is an existing 0.0.9.1 Japanese UI sample using fictional data and illustrative floor artwork. The app includes English UI: open Settings (設定) and select English.
 
+## Report arena MAP problems and share evidence
+
+**If a floor is clipped, the wrong field appears or patterns look broken, please share the duty, screenshots and reproduction details.**
+
+- [Issues: bugs, logs and reproduction data (English and Japanese forms)](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/issues/new/choose)
+- [Discussions: community chat, questions, layouts and reference material](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/discussions/categories/general)
+- [How to attach files and what to include](.github/SUPPORT.md#english)
+
+You can attach screenshots and ZIP files. **Investigation and fixes depend on financial support and available development time. Reports, contributed data and donations do not guarantee a fix or deadline.** A donation is not required to report a problem.
+
+Support development: **[Ko-fi](https://ko-fi.com/lost2)** / **[OFUSE](https://ofuse.me/lost)**
+
 ## Get started
 
 1. Download the application ZIP and extract the entire folder to a writable location.
