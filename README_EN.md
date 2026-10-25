@@ -2,9 +2,9 @@
 
 **A Windows app for organizing, editing and saving FFXIV field markers while viewing the arena floor.**
 
-**0.1.0.7** (update 107) · Windows x64 · No Dalamud required
+**0.1.1.1** (update 111) · Windows x64 · No Dalamud required
 
-[日本語](README.md) · [Download the app](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/releases/download/v0.1.0.7/UltimateXIVMarkerManager_0.1.0.7.zip) · [Release notes](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/releases/tag/v0.1.0.7) · [Illustrated English guide](docs/USER_GUIDE_EN.md)
+[日本語](README.md) · [Download the app](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/releases/download/v0.1.1.1/UltimateXIVMarkerManager_0.1.1.1.zip) · [Release notes](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/releases/tag/v0.1.1.1) · [Illustrated English guide](docs/USER_GUIDE_EN.md)
 
 ![Marker presets and arena preview — Japanese UI sample with fictional data](docs/images/02-overview.png)
 
@@ -34,13 +34,12 @@ Saving to Library or an independent map is separate from writing marker slots to
 
 ## Included in this release
 
-- English user guide in the signed app ZIP (`README_EN.txt`), plus the illustrated online guide.
-- Recent UISAVE history entries can be removed without deleting the files or current draft.
-- Default EXE/UISAVE discovery while preserving valid saved choices and explicit EXE deselection.
-- Arena-floor fixes, field selection and separated help/loading text. Multiple backgrounds use **Field 1, Field 2, …**; these are not live phase detection.
-- Abyssos Fifth Circle (Savage): initial metal floor and rock floor are separate fields. Other recent arena fixes are retained from 0.1.0.2.
+- Create Strategy Boards and add, delete, duplicate or change object types. Edit text, color, opacity, flipping, layer order, titles and backgrounds.
+- Edit both saved and shared drawings directly. Shared drawings do not need to be moved into the saved list. Move or copy drawings between either list.
+- Ctrl+click to select multiple objects, move them together, align them vertically or horizontally, and use grid or nearby-object snapping. Undo and redo are available.
+- Fix continuous canvas shrinking after entering the editor or resizing the window.
 
-0.1.0.7 fixes clipped floor perimeters introduced in 0.1.0.6. Framing includes adjoining floor parts instead of only the central mesh. Ambiguous scenes retain their earlier framing. Checks cover 31 floor, height and field views, including marker alignment at 100% and 80% zoom. Saved coordinates are unchanged. Version components are decimal digits of the update count: 0.0.9.9 is followed by 0.1.0.0.
+Open **Strategy Board → Saved list / Shared list → New drawing**, or select a drawing and choose **Edit**. A board supports up to 50 objects; text is limited to 31 UTF-8 bytes and titles to 63 UTF-8 bytes. Exit FFXIV, then choose **Save changes → Save to DAT** after reviewing the confirmation.
 
 ## Features and scope
 
@@ -51,12 +50,12 @@ Saving to Library or an independent map is separate from writing marker slots to
 | Library | Saved layouts, folders, tags, notes, favorites and Pack import |
 | Maps | Field map or top-down arena, initial/placement location, field and height selection, zoom, pan and grid |
 | Map cache | Generated images stored beside the EXE and reused when compatible |
-| Game Strategy Board | View saved/shared lists; external export/import; folder insertion/deletion; add selected shared/external boards to the saved list |
+| Game Strategy Board | Create and directly edit saved/shared drawings; external export/import; folder insertion/deletion; move or copy between lists |
 | Independent maps | Edit custom UXMM diagrams and share selected maps with Map PACK |
 
-Game saved/shared board layouts are view-only in UXMM. Custom UXMM diagrams have separate editing tools; they do not generate new FFXIV shared codes. Arena lighting, glow, VFX and animated mechanics are not fully reproduced. Content-wide floor accuracy and compatibility after game updates still require checking.
+Game saved/shared drawings can be edited and saved in **Strategy Board**. Custom UXMM diagrams under **Maps** have a separate storage destination and do not generate new FFXIV shared codes. Arena lighting, glow, VFX and animated mechanics are not fully reproduced. Content-wide floor accuracy and compatibility after game updates still require checking.
 
-The signed build, package contents and checksum are checked for this release. A successful build does not establish current in-game compatibility.
+Known MAP limitations remain: Aloalo Island can have clipped edges in placement/selected-height views, and first/second-phase views for P12S, E12S and P4S are not fully separated. Version 0.1.1.1 does not include fixes for these MAP issues.
 
 ## Documentation and files
 

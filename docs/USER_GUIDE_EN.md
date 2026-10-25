@@ -1,4 +1,4 @@
-# UltimateXIVMarkerManager 0.1.0.7 — English User Guide
+# UltimateXIVMarkerManager 0.1.1.1 — English User Guide
 
 Organize, edit and save FFXIV field marker presets on Windows while viewing
 the arena floor. Dalamud is not required. The default interface is Japanese;
@@ -12,7 +12,7 @@ https://github.com/Lu-ci-el/UltimateXIVMarkerManager/blob/main/docs/USER_GUIDE.m
 
 [日本語ガイド](USER_GUIDE.md) · [Download the app](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/releases/latest)
 
-The illustrations below are the existing 0.0.9.1 Japanese UI samples with fictional paths, layouts and diagrams. They illustrate the workflow; newer field and history controls are described in the text. They are not screenshots proving current game compatibility.
+The illustrations below are the existing 0.0.9.1 Japanese UI samples with fictional paths, layouts and diagrams. Current controls, including Strategy Board authoring, are described in the text.
 
 ## 1. Install And Start
 
@@ -133,21 +133,46 @@ Arena extraction is still being checked across content. Lighting, glow, VFX,
 animated mechanics and all in-game material effects are not fully reproduced.
 An offline floor image may differ in color or appearance from the live game.
 
+Known MAP issues remain in 0.1.1.1: Aloalo Island can have clipped edges in
+placement/selected-height views, and P12S, E12S and P4S do not have fully separated
+first/second-phase views. This version does not include fixes for those issues.
+
 ## 6. Strategy Board And Independent Maps
 
 ![Saved Strategy Board folders and board viewer. Japanese UI sample.](images/08-strategy.png)
 
 Saved Strategy Board folders and board viewer. Japanese UI sample.
 
-Strategy Board can display the game's saved and shared boards. Open or collapse
-folders, export a list or folder, and open supported external files. Inserting
-or deleting a saved folder, or adding selected shared/external boards to the
-saved list, changes UISAVE: exit FFXIV and review the confirmation first.
+Strategy Board displays the game's saved and shared drawings. Open or collapse
+folders, export a list or folder, and open supported external files.
 
-The layouts in the game's saved/shared lists are view-only in UXMM. UXMM's
-independent maps and custom diagrams have separate editing tools for objects,
-positions, size, rotation, layers, visibility and locking. Saving an independent
-map saves it in UXMM, not into the game's Strategy Board.
+Select Saved list or Shared list, then choose New drawing or select an existing
+drawing and click Edit. Shared drawings can be edited directly without moving
+them to the saved list.
+
+Add, delete, duplicate or change object types. Edit text, color, opacity, flipping,
+layer order, title and background, plus position, scale, rotation, visibility and
+locks. Change sector angles, rectangle width/height, and line endpoints, angle
+and thickness. Ctrl+click selects multiple objects for group movement and vertical
+or horizontal alignment. Toggle the 16-unit grid and grid/nearby-object snapping.
+Undo and Redo are available.
+
+A board supports up to 50 objects. Text is limited to 31 UTF-8 bytes and drawing
+titles to 63 UTF-8 bytes; these are byte limits, not character counts.
+Exit FFXIV, choose Save changes, review the confirmation and select Save to DAT.
+Use Finish editing and discard changes to leave without saving.
+
+Use Move to shared list or Move to saved list to transfer a drawing. For a saved
+destination, choose an existing folder or create a new one. A move removes the
+original only when the destination is saved. Use copying to keep the original.
+External drawings can be copied into either list and edited there. A full
+destination disables copying/moving; existing drawings can still be edited.
+Folder insertion/deletion, editing, copying and moving change UISAVE: exit FFXIV
+and review the confirmation first.
+
+UXMM's independent maps and custom diagrams have separate editing tools and
+storage. Saving an independent map saves it in UXMM, not into the game's
+Strategy Board.
 
 Existing FFXIV shared codes support limited editing of existing objects in the
 strategy editor. This does not support adding, deleting or changing object types.
@@ -194,8 +219,8 @@ Changes missing in game: check the character's UISAVE and confirm that you saved
 the marker slots after applying the draft.
 Wrong or clipped map: check Initial / Placement location, Field, height, zoom and
 pan. Report the duty name and selected background if the floor is still wrong.
-Cannot edit a game board: the saved/shared list viewer is separate from the
-independent custom-diagram editor.
+Cannot edit a game board: select a drawing in Saved list or Shared list and click
+Edit. Check object locks. Copy external drawings into a list before editing them.
 
 For a bug report, include the application version, duty, selected field/height,
 steps and exact error text. Hide personal paths and character information in
@@ -203,14 +228,11 @@ screenshots. Do not post UISAVE files, backups or your entire personal app folde
 
 ## 9. This Release
 
-0.1.0.7 fixes floor perimeters clipped by the 0.1.0.6 framing change.
-The whole visible connected floor is included, with a small edge margin.
-14 fitted views passed explicit image-edge checks; 17 fallback views match
-0.1.0.5, including the restored P5S metal floor. 31 production HTML views
-passed 100% and 80% zoom and marker-alignment checks. The previous TOP
-clipping is rejected by both pixel-edge and independently measured bounds.
-This covers the measured scenes, not every arena in the game. WPF/game UI
-was not run. The version represents update count 107. No game assets are distributed.
+0.1.1.1 adds full Strategy Board authoring in both saved and shared lists, including
+new drawings, object creation/deletion, text and appearance editing, multi-select,
+alignment and snapping. Moving/copying between lists is available. It also includes
+the fix for continuous canvas shrinking after entering the editor or resizing.
+The version represents update count 111. No game assets are distributed.
 
 This repository distributes the application and user documentation. The
 application's development source is private. GitHub's automatically generated
