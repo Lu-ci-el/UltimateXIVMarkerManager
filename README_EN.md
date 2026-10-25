@@ -55,7 +55,7 @@ Open **Strategy Board → Saved list / Shared list → New drawing**, or select 
 
 Game saved/shared drawings can be edited and saved in **Strategy Board**. Custom UXMM diagrams under **Maps** have a separate storage destination and do not generate new FFXIV shared codes. Arena lighting, glow, VFX and animated mechanics are not fully reproduced. Content-wide floor accuracy and compatibility after game updates still require checking.
 
-Known MAP limitations remain: Aloalo Island can have clipped edges in placement/selected-height views, and first/second-phase views for P12S, E12S and P4S are not fully separated. Version 0.1.1.1 does not include fixes for these MAP issues.
+Please report bugs through [Issues](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/issues/new/choose). Fixes depend on financial support.
 
 ## Documentation and files
 

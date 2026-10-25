@@ -133,9 +133,8 @@ Arena extraction is still being checked across content. Lighting, glow, VFX,
 animated mechanics and all in-game material effects are not fully reproduced.
 An offline floor image may differ in color or appearance from the live game.
 
-Known MAP issues remain in 0.1.1.1: Aloalo Island can have clipped edges in
-placement/selected-height views, and P12S, E12S and P4S do not have fully separated
-first/second-phase views. This version does not include fixes for those issues.
+Please report bugs through [Issues](https://github.com/Lu-ci-el/UltimateXIVMarkerManager/issues/new/choose).
+Fixes depend on financial support.
 
 ## 6. Strategy Board And Independent Maps
 
